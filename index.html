@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta title="viewport" description="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" description="ie=edge">
+    <title>SYOOK</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/Syooklogo.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <img src="images/Syook.png">
+
+    <hr>
+    <div class="container-fluid">
+        <h3 id="g1">
+            NoteCreation Application
+        </h3>
+        <br>
+
+
+        <div class="row">
+            <div id="div-add" class="col-sm-6">
+                <form role="form">
+                    <div class="form-group">
+                        <h4><label for="title">Title</label></h4>
+                        <input type="text" class="form-control" id="title" placeholder="TITLE" required />
+                    </div>
+                    <div class="form-group">
+                        <h4><label for="description">Description</label></h4>
+                        <textarea rows="6" cols="50" class="form-control" id="description" placeholder="DESCRIPTION" required></textarea>
+                    </div>
+
+                    <button id="submit" class="form btn btn-success" type="button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <!-- <input id="myInput" type="text" placeholder="Search.."> -->
+        <div class="row">
+            <div id="div-list" class="col-sm-4 hide">
+                <h4 id="g2">List of Notes</h4>
+                <ul id="list">
+                </ul>
+            </div>
+
+            <div id="div-edit" class="col-xs-4 hide">
+                <h4 id="g2">Edit OR Delete Notes</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <h4><label for="title">Title</label></h4>
+                        <input type="text" class="form-control" id="edit-title" required />
+                    </div>
+                    <div class="form-group">
+                        <h4><label for="description">Description</label></h4>
+                        <textarea rows="4" cols="50" class="form-control" id="edit-description" required></textarea>
+                    </div>
+                    <button id="save" class="btn btn-primary" type="button">Save</button>
+                    <button id="remove" class="btn btn-danger" type="button">Remove</button>
+                    <button id="cancel" class="btn btn-default" type="button">Cancel</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>
